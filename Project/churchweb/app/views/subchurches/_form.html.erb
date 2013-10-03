@@ -1,0 +1,33 @@
+<%= form_for(@subchurch) do |f| %>
+  <% if @subchurch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subchurch.errors.count, "error") %> prohibited this subchurch from being saved:</h2>
+
+      <ul>
+      <% @subchurch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subchurch_name %><br>
+    <%= f.text_field :subchurch_name %>
+  </div>
+  <div class="field">
+    <%= f.label :subchurch_address %><br>
+    <%= f.text_field :subchurch_address %>
+  </div>
+  <div class="field">
+    <%= f.label :subchurch_phone_no %><br>
+    <%= f.number_field :subchurch_phone_no %>
+  </div>
+  <div class="field">
+    <%= f.label :id_no %><br>
+    <%= f.number_field :id_no %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

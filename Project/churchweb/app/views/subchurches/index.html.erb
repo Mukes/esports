@@ -1,0 +1,33 @@
+<h1>Listing subchurches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subchurch name</th>
+      <th>Subchurch address</th>
+      <th>Subchurch phone no</th>
+      <th>Id no</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subchurches.each do |subchurch| %>
+      <tr>
+        <td><%= subchurch.subchurch_name %></td>
+        <td><%= subchurch.subchurch_address %></td>
+        <td><%= subchurch.subchurch_phone_no %></td>
+        <td><%= subchurch.id_no %></td>
+        <td><%= link_to 'Show', subchurch %></td>
+        <td><%= link_to 'Edit', edit_subchurch_path(subchurch) %></td>
+        <td><%= link_to 'Destroy', subchurch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subchurch', new_subchurch_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subchurch name:</strong>
+  <%= @subchurch.subchurch_name %>
+</p>
+
+<p>
+  <strong>Subchurch address:</strong>
+  <%= @subchurch.subchurch_address %>
+</p>
+
+<p>
+  <strong>Subchurch phone no:</strong>
+  <%= @subchurch.subchurch_phone_no %>
+</p>
+
+<p>
+  <strong>Id no:</strong>
+  <%= @subchurch.id_no %>
+</p>
+
+<%= link_to 'Edit', edit_subchurch_path(@subchurch) %> |
+<%= link_to 'Back', subchurches_path %>

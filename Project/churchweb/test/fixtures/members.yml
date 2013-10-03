@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  member_name: MyString
+  date_of_birth: 2013-09-16
+  member_phone_no: 1
+  gender: MyString
+  baptism_date: 2013-09-16
+  church_name: MyString
+  subchurch_name: MyString
+  profession: MyString
+  marriage_status: MyString
+  sub_id: 1
+  member_id: 1
+  member_email_id: MyString
+
+two:
+  member_name: MyString
+  date_of_birth: 2013-09-16
+  member_phone_no: 1
+  gender: MyString
+  baptism_date: 2013-09-16
+  church_name: MyString
+  subchurch_name: MyString
+  profession: MyString
+  marriage_status: MyString
+  sub_id: 1
+  member_id: 1
+  member_email_id: MyString

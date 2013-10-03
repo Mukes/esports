@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subchurch_name: MyString
+  subchurch_address: MyString
+  subchurch_phone_no: 1
+  id_no: 1
+
+two:
+  subchurch_name: MyString
+  subchurch_address: MyString
+  subchurch_phone_no: 1
+  id_no: 1

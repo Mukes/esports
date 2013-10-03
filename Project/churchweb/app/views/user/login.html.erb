@@ -1,0 +1,14 @@
+<h1>Login</h1>
+<% form_for('login') do %>
+  <p>
+    Username:<br />
+   <%= text_field_tag 'username' %><br />
+  </p>
+  <p>
+    Password:<br />
+   <%= password_field_tag 'password' %><br />
+  </p>
+  <p>
+    <%= submit_tag "Login" %>
+  </p>
+<% end %>

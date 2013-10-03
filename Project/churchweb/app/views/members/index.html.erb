@@ -1,0 +1,49 @@
+<h1>Listing members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Member name</th>
+      <th>Date of birth</th>
+      <th>Member phone no</th>
+      <th>Gender</th>
+      <th>Baptism date</th>
+      <th>Church name</th>
+      <th>Subchurch name</th>
+      <th>Profession</th>
+      <th>Marriage status</th>
+      <th>Sub</th>
+      <th>Member</th>
+      <th>Member email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @members.each do |member| %>
+      <tr>
+        <td><%= member.member_name %></td>
+        <td><%= member.date_of_birth %></td>
+        <td><%= member.member_phone_no %></td>
+        <td><%= member.gender %></td>
+        <td><%= member.baptism_date %></td>
+        <td><%= member.church_name %></td>
+        <td><%= member.subchurch_name %></td>
+        <td><%= member.profession %></td>
+        <td><%= member.marriage_status %></td>
+        <td><%= member.sub_id %></td>
+        <td><%= member.member_id %></td>
+        <td><%= member.member_email_id %></td>
+        <td><%= link_to 'Show', member %></td>
+        <td><%= link_to 'Edit', edit_member_path(member) %></td>
+        <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Member', new_member_path %>

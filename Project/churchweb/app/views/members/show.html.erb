@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Member name:</strong>
+  <%= @member.member_name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @member.date_of_birth %>
+</p>
+
+<p>
+  <strong>Member phone no:</strong>
+  <%= @member.member_phone_no %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @member.gender %>
+</p>
+
+<p>
+  <strong>Baptism date:</strong>
+  <%= @member.baptism_date %>
+</p>
+
+<p>
+  <strong>Church name:</strong>
+  <%= @member.church_name %>
+</p>
+
+<p>
+  <strong>Subchurch name:</strong>
+  <%= @member.subchurch_name %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @member.profession %>
+</p>
+
+<p>
+  <strong>Marriage status:</strong>
+  <%= @member.marriage_status %>
+</p>
+
+<p>
+  <strong>Sub:</strong>
+  <%= @member.sub_id %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @member.member_id %>
+</p>
+
+<p>
+  <strong>Member email:</strong>
+  <%= @member.member_email_id %>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
